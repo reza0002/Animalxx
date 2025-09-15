@@ -13,5 +13,7 @@ public class Dyr {
     }
 
     // Methods
-    public void makeSound() {}
+    public String toString() {
+
+    }
 }

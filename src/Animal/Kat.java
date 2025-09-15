@@ -6,8 +6,12 @@ public class Kat extends Dyr{
         super(navn ,type);
     }
 
-    @Override
-    public void makeSound() {
+    public String makeSound() {
+        return (" (Meow!)");
+    }
 
+    @Override
+    public String toString() {
+        return ("Type: " + type + "\n" + "Navn: " + navn + makeSound());
     }
 }
