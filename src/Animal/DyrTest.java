@@ -24,6 +24,7 @@ public class DyrTest {
             System.out.print("Hvad er navnet på dyret? \n");
             String navn = scanner.nextLine();
 
+            // Opretter det rigtige dyr baseret på typen
             if (type.equalsIgnoreCase("Kat")) {
                 dyr[i] = new Kat(navn, type);
             } else if (type.equalsIgnoreCase("Hund")) {
