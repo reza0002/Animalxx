@@ -40,7 +40,7 @@ public class DyrTest {
         System.out.println("Tak for din indlevering! Her er en oversigt over de dyr, du har indleveret:\n");
         scanner.close();
 
-        // Printer alle dyr som er indleveret
+        // Printer alle dyr som er indleveret - Her tæller den en op for hvert dyr.
         System.out.println("---- Dyr registret ----");
         for (int i = 0; i < numberOfPets; i++) {
             System.out.println("Registreret dyr nr: " + (i + 1) + "\n" + dyr[i] + "\n");
