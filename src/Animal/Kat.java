@@ -1,17 +1,16 @@
 package Animal;
 
 public class Kat extends Dyr{
-
     public Kat (String navn, String type) {
         super(navn ,type);
     }
 
+    @Override
     public String makeSound() {
-        return (" (Meow!)");
+        return ("(Meow!)");
     }
 
-    @Override
     public String toString() {
-        return ("Type: " + type + "\n" + "Navn: " + navn + makeSound());
+        return ("Type: " + type + " " + makeSound() + "\n" + "Navn: " + navn);
     }
 }

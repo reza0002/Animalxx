@@ -3,8 +3,8 @@ package Animal;
 // SUPERKLASSE
 
 public class Dyr {
-    String type;
-    String navn;
+    protected String type;
+    protected String navn;
 
     // Constructor
     public Dyr(String navn, String type) {
@@ -12,12 +12,12 @@ public class Dyr {
         this.type = type;
     }
 
+    // Methods
     public String makeSound() {
-        return ("Lyd");
+        return ("");
     }
 
-    // Methods
     public String toString() {
-        return ("Type: " + type + "\n" + "Navn: " + navn);
+        return ("Type: " + type + " " + makeSound() + "\n" + "Navn: " + navn);
     }
 }

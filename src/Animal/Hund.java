@@ -5,12 +5,12 @@ public class Hund extends Dyr {
         super (navn, type);
     }
 
+    @Override
     public String makeSound(){
-        return ("Vov, Vov, Vov!");
+        return ("(Vov, Vov, Vov!)");
     }
 
-    @Override
     public String toString(){
-        return ("Type: " + type + "\n" + "navn: " + navn + "\n" + makeSound());
+        return ("Type: " + type + " " + makeSound() + "\n" + "navn: " + navn + "\n");
     }
 }
