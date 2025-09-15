@@ -12,8 +12,12 @@ public class Dyr {
         this.type = type;
     }
 
+    public String makeSound() {
+        return ("Lyd");
+    }
+
     // Methods
     public String toString() {
-
+        return ("Type: " + type + "\n" + "Navn: " + navn);
     }
 }
