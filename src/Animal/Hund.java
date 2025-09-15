@@ -5,8 +5,12 @@ public class Hund extends Dyr {
         super (navn, type);
     }
 
+    public String makeSound(){
+        return ("Vov, Vov, Vov!");
+    }
+
     @Override
-    public void makeSound(){
-        System.out.println(navn + "Vov, Vov, Vov!");
+    public String toString(){
+        return ("Type: " + type + "\n" + "navn: " + navn + "\n" + makeSound());
     }
 }
